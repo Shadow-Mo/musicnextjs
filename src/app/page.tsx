@@ -1,7 +1,11 @@
-import Image from "next/image";
+import FeaturedCourses from "@/components/ui/FeaturedCourses";
+import HeroSection from "@/components/ui/HeroSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+    <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white">
+      <HeroSection />
+      <FeaturedCourses />
+    </main>
   );
 }
